@@ -1,0 +1,66 @@
+/* src/components/BirthdayCard.css */
+.birthday-card-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .birthday-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: pop-up 0.5s ease-out;
+  }
+  
+  .birthday-card-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #e91e63;
+    margin-bottom: 1rem;
+  }
+  
+  .birthday-card-message {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .birthday-card-name {
+    font-weight: bold;
+    color: #2196f3;
+  }
+  
+  .birthday-card-button {
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    border-radius: 9999px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .birthday-card-button:hover {
+    background-color: #c2185b;
+  }
+  
+  @keyframes pop-up {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
