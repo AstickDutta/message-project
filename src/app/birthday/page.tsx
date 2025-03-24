@@ -24,7 +24,7 @@ interface BirthdayPageProps {
   };
 }
 
-export default function BirthdayPage({ searchParams }: BirthdayPageProps) {
+export default async function BirthdayPage({ searchParams }: BirthdayPageProps) {
   const name = searchParams.name || 'Guest';
 
   return (
